@@ -35,6 +35,7 @@ Studenci mają zrozumieć:
 jak działa API przyjmujące dane,
 jak wygląda logowanie requestów,
 jak działa publikacja wiadomości do kolejki.
+
 2️⃣ Aplikacja przetwarzająca (Worker)
 Zadania:
 
@@ -48,6 +49,7 @@ jak działa konsument kolejki,
 czym jest dead-letter queue,
 jak wygląda walidacja integralności danych,
 jak działa zapis do bazy czasowej.
+
 3️⃣ Aplikacja webowa (SignalR) + Alert Influx
 Zadania:
 
@@ -60,6 +62,7 @@ Studenci mają zrozumieć:
 jak działa mechanizm webhooków,
 jak działa SignalR,
 jak budować prosty interfejs realtime.
+
 4️⃣ Testy wydajnościowe (JMeter)
 Zadania:
 
@@ -73,7 +76,8 @@ grupę wątków,
 odczyt danych z CSV,
 wysyłanie żądań POST do API,
 losowe opóźnienia (Gaussian Timer),
-wizualizację wyników (Table + Tree).
+wizualizację wyników (Table + Tree
+
 🧠 Wymagania niefunkcjonalne
 Odporność na błędy – system nie może się zatrzymać po błędnej wiadomości.
 Modularność – trzy niezależne aplikacje współpracujące przez kolejkę.
@@ -81,7 +85,9 @@ Czytelność logów – każdy etap musi logować operacje.
 Realizm – projekt ma symulować prawdziwy system telemetryczny.
 Skalowalność – worker powinien obsługiwać wiele kanałów/konsumentów.
 Testowalność – API musi być możliwe do obciążenia JMeterem.
+
 📦 Zakres prac dla studentów
+
 🔹 1. Przygotowanie środowiska
 Studenci powinni:
 
@@ -90,6 +96,7 @@ uruchomić InfluxDB,
 skonfigurować webhook w InfluxDB,
 przygotować trzy aplikacje w osobnych projektach,
 skonfigurować routing, porty i zależności.
+
 🔹 2. Implementacja przepływu danych
 Studenci mają odtworzyć przepływ:
 
@@ -104,6 +111,7 @@ zrozumieć ideę sumy kontrolnej,
 wykonać walidację po stronie konsumenta,
 obsłużyć przypadki błędne (DLQ),
 zaprezentować przykłady poprawnych i błędnych wiadomości.
+
 🔹 4. Obsługa alertów
 Studenci mają:
 
@@ -111,6 +119,7 @@ przygotować regułę alertową w InfluxDB,
 odebrać webhook,
 przesłać alert do klientów przez SignalR,
 wyświetlić go w UI.
+
 🔹 5. Testy wydajnościowe (JMeter)
 Studenci mają:
 
@@ -118,6 +127,7 @@ przygotować plik CSV z danymi wejściowymi,
 uruchomić test JMeter,
 przeanalizować wyniki (czas odpowiedzi, błędy, throughput),
 przygotować raport z testów.
+
 📄 Oczekiwane rezultaty
 Studenci powinni dostarczyć:
 
@@ -135,11 +145,13 @@ realtime UI z powiadomieniami.
 omówienie architektury,
 analiza błędów i DLQ,
 wnioski dotyczące niezawodności systemów rozproszonych.
+
 👥 Zasady pracy zespołowej
 Zespół 2–3 osoby.
 Każdy członek odpowiada za jedną aplikację.
 Wspólna integracja i testy.
 W prezentacji każdy omawia swoją część.
+
 📘 Dokumentacja końcowa projektu
 System Telemetryczny z Kolejkowaniem, Walidacją i Notyfikacjami
 Wymagania dotyczące zawartości dokumentacji
